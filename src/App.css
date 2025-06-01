@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.my-custom-table {
+  width: 100%;
+}
+
+/* .my-custom-table .ant-table {
+  border: 1px solid #d9d9d9;
+}
+
+.my-custom-table .ant-table-thead > tr > th,
+.my-custom-table .ant-table-tbody > tr > td {
+  border: 1px solid #d9d9d9;
+} */
+.custom-card {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px; /* optional: rounded corners */
+}
+.custom-card .ant-card-head {
+  background-color: #001529; /* dark blue */
+  color: white;
+  border-bottom: 2px solid #1890ff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}

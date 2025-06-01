@@ -6,7 +6,6 @@ import { Table, Card, Row, Col, Typography, Space } from "antd";
 import { Spaces } from "./components/spaces";
 const { Text } = Typography;
 export function Properties() {
-  //const count = useSelector(selectCount);
   const columns = [
     {
       title: "propertyId",
@@ -34,7 +33,6 @@ export function Properties() {
           className="my-custom-table"
           columns={columns}
           rowKey="propertyId"
-          // rowSelection={Object.assign(Object.assign({}, rowSelection), { checkStrictly })}
           dataSource={propertyRecords}
           expandable={{
             expandedRowRender: (record) => (
